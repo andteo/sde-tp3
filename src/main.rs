@@ -31,6 +31,12 @@ fn imprest(a:i32, b:i32)->Option<i32>{
 
 fn main() {
     let args: Vec<String> = env::args().collect();
+    if env::var("CASE_INSENSITIVE").is_err(){
+        std::process::exit(-1);
+    }else{
+        
+    }
+
 
     //let deimpartit = 10f32; ex1
     //let impartitor = 0f32;
@@ -69,9 +75,8 @@ fn main() {
     }else {
         println!("Problema");
         std::process::exit(-1);
-    } ex3*/
+    }ex3*/
     
-
     
 
 
